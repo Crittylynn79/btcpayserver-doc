@@ -84,7 +84,11 @@ const sidebarUserGuide = [
         path: '/Forms',
         children: [['/AdvancedForms', 'Advanced Forms']]
       },
-      ['/Apps', 'Apps'],
+      {
+        title: 'Apps',
+        path: '/Apps',
+        children: [['/Conference-PoS-guide', 'Conference PoS Guide']]
+      },
       ['/Reporting', 'Reporting'],
       {
         title: 'Payjoin',
@@ -113,6 +117,10 @@ const sidebarUserGuide = [
       ['/Shopware', 'Shopware'],
       ['/VirtueMart', 'VirtueMart'],
       ['/Smartstore/', 'Smartstore'],
+      ['/Grandnode/', 'Grandnode'],
+      ['/Nopcommerce/', 'Nopcommerce'],
+      ['/Xenforo/', 'Xenforo'],
+      ['/InvoiceNinja', 'Invoice Ninja'],
       ['/CustomIntegration', 'Custom Integration']
     ]
   },
@@ -124,7 +132,17 @@ const sidebarUserGuide = [
       ['/Nostr/', 'Nostr'],
       ['/TicketTailor/', 'TicketTailor'],
       ['/Trocador/', 'Trocador'],
-      ['/Wabisabi/', 'Wabisabi Coinjoin']
+      ['/SideShift/', 'SideShift'],
+      ['/Bringin/', 'Bringin'],
+      ['/Payroll/', 'Payroll'],
+      ['/DynamicReports/', 'Dynamic Reports'],
+      ['/Breez/', 'Breez'],
+      ['/Wabisabi/', 'Wabisabi Coinjoin'],
+      [
+        `https://dev.blink.sv/examples/btcpayserver-plugin`,
+        'Blink',
+        { type: 'external' } 
+      ],
     ]
   },
   {
@@ -262,6 +280,7 @@ const sidebarDevelopment = [
       //   'Greenfield API Plugins',
       //   { type: 'external' }
       // ],
+      '/Development/ecommerce-integration-guide',
       '/BTCPayServer/greenfield-authorization',
       '/Development/GreenFieldExample',
       '/Development/GreenFieldExample-NodeJS',
@@ -438,7 +457,7 @@ module.exports = {
     algolia: {
       indexName: 'btcpayserver',
       appId: 'EJBX059GO6',
-      apiKey: '534cbeda78baf7eeb4767d555f2585d4',
+      apiKey: '2ec08d532af6b265b73b2e71cae499ce',
       // See https://www.algolia.com/doc/api-reference/api-parameters/
       algoliaOptions: {
         // hitsPerPage: 10,
